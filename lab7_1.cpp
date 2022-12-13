@@ -32,10 +32,32 @@ string func3(string x){
 	}
 	return y;	
 }
-
+string n1, n2, n3, n4;
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+    cout << "Input text: ";
+	cin >> n1;
+	n2 = func1(n1);
+    cout << "Reversed text: "<< n2;
+	n3 = func2(n1);
+	n4 = func2(n2);
+    cout << "\nPalindrome: ";
+	int i = 0, L = n1.size(), count = 0;
+	while (i < L)
+	{
+		if (n3[i] == n4[i])
+		{
+			count++;
+		}
+		i++;
+	}
+	if (count == i)
+	{
+		cout << "Yes";
+	}else{
+		cout << "No";
+	}
+	
+	
     return 0;
 }
+ 
